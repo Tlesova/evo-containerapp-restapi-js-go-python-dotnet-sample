@@ -21,8 +21,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ${{ env.CR_URI }}
-          username: ${{ secrets.3e6b739fe58e46f03bdcfb96d27ffcc0 }}
-          password: ${{ secrets.7b642a2c2e2f5a15a627092d3cf9a1f2 }}
+          username: ${{ secrets.EVO_CR_LOGIN }}
+          password: ${{ secrets.EVO_CR_PWD }}
 
       - name: .NET - Build and push docker image to Evolution Aritfact Registry
         uses: docker/build-push-action@v5
