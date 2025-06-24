@@ -1,4 +1,3 @@
-
 name: Build Docker Image and Push to Evolution Artifact Registry
 
 on:
