@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  CR_URI: 00e4f277-ed62-4685-88d9-71b885bd147b.cr.cloud.ru
+  CR_URI: test6.cr.cloud.ru
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -55,3 +55,4 @@ jobs:
           tags: ${{ env.CR_URI }}/evo-restapigo:${{ github.sha }}
           file: ./restapi-go/src/Dockerfile
           context: ./restapi-go/src
+
